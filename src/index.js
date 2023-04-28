@@ -1,7 +1,7 @@
 const express = require('express');
-const connection = require('./db');
 const router = require('./routes/route');
 const app = express();
+require('./models')
 app.use(express.json());
 
 app.use('/',router)
